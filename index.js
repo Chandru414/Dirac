@@ -1,16 +1,29 @@
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// const firebaseConfig = {
+//   apiKey: "AIzaSyB0vN1Gq_3Z8Hz6IpzHLjxA5Rkn1WTe2kE",
+//   authDomain: "dirac-1e9d8.firebaseapp.com",
+//   databaseURL: "https://dirac-1e9d8-default-rtdb.firebaseio.com",
+//   projectId: "dirac-1e9d8",
+//   storageBucket: "dirac-1e9d8.firebasestorage.app",
+//   messagingSenderId: "400733642489",
+//   appId: "1:400733642489:web:e9bbda34a012c83da90c28",
+//   measurementId: "G-XYN80P5Z48"
+// };
+
 const firebaseConfig = {
-  apiKey: "AIzaSyB0vN1Gq_3Z8Hz6IpzHLjxA5Rkn1WTe2kE",
-  authDomain: "dirac-1e9d8.firebaseapp.com",
-  databaseURL: "https://dirac-1e9d8-default-rtdb.firebaseio.com",
-  projectId: "dirac-1e9d8",
-  storageBucket: "dirac-1e9d8.firebasestorage.app",
-  messagingSenderId: "400733642489",
-  appId: "1:400733642489:web:e9bbda34a012c83da90c28",
-  measurementId: "G-XYN80P5Z48"
+  apiKey: "AIzaSyC8oFRTxLy4aRUAMj8Qo6bCCI5iT3Ts-Hs",
+  authDomain: "dirac-aa4f9.firebaseapp.com",
+  databaseURL: "https://dirac-aa4f9-default-rtdb.firebaseio.com",
+  projectId: "dirac-aa4f9",
+  storageBucket: "dirac-aa4f9.firebasestorage.app",
+  messagingSenderId: "338919337836",
+  appId: "1:338919337836:web:d4b2d0668664c554634d49",
+  measurementId: "G-BJ5VFQ4275"
 };
+
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
