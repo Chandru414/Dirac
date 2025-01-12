@@ -5,32 +5,34 @@
     <title>Read, Write, Update, Delete</title>
     <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <style>
+     table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+  </style>
   </head>
   <body>
     <div id="container">
 
-      <div id="title_container">
-        <span id="content">
-          <h2 class="typedtext"></h2>
-        </span>
-        <h2 id="sub_header"> with Firebase Database </h2>
-      </div>
+      <canvas id="myChart" style="width:100%;max-width:100%;height:300px"></canvas>
 
-      <!-- <div id="form_container">
-        <input placeholder="Email" type="email" id="email"/>
-        <input placeholder="Password" type="password" id="password"/>
-        <input placeholder="Username" type="name" id="username"/>
-        <input placeholder="Say Something 🤣😂" type="text" id="say_something"/>
-        <input placeholder="Favourite Food" type="text" id="favourite_food"/>
+
+      <!-- <div id="button_container">
+        <button id="submit" onclick="save()"> SUBMIT </button>
       </div> -->
 
-      <div id="button_container">
-        <button id="submit" onclick="save()"> SUBMIT </button>
-      </div>
-
-      <table id="table">
-        <tr>
+      <!-- <table id="DataTable"> -->
+        <!-- <tr>
           <th>Index</th>
           <th>Amphour</th>
           <th>Bat_temp</th>
@@ -52,8 +54,40 @@
           <th>Spare7</th>
           <th>Spare8</th>
           <th>Voltage</th>
-        </tr>
-      </table>
+        </tr> -->
+      <!-- </table> -->
+
+      <table id="DataTable">
+        <thead>
+            <tr>
+                <th>Amphour</th>
+                <th>BatteryTemp</th>
+                <th>Current</th>
+                <th>Energy</th>
+                <th>Index</th>
+                <th>MotorRPM</th>
+                <th>MotorTEMP</th>
+                <th>Odometer</th>
+                <th>Power</th>
+                <th>SOC</th>
+                <th>Speed</th>
+                <th>TimeStamp</th>
+                <th>S1</th>
+                <th>S2</th>
+                <th>S3</th>
+                <th>S4</th>
+                <th>S5</th>
+                <th>S6</th>
+                <th>S7</th>
+                <th>S8</th>
+                <th>Voltage</th>
+                <!-- Add other headers as needed -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be populated here -->
+        </tbody>
+    </table>
 
     </div>
   </body>
@@ -187,7 +221,7 @@
 
 
   </style>
-  <script>
+  <!-- <script>
     function typingEffect() {
       const contactTexts = shuffleArray(['SPEED', 'RPM', 'DEMO', 'Delete']);
       const typedtext = document.getElementsByClassName("typedtext")[0];
@@ -241,7 +275,7 @@
 
           return array;
       }
-  </script>
+  </script> -->
 
 
   <script src="https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js"></script>
