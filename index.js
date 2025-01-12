@@ -353,6 +353,11 @@ new Chart("myChart", {
       data: speedValues,
       borderColor: "blue",
       fill: false
+    }, { 
+      label: "Voltage", // Optional: Add a label for energy
+      data: voltageValues,
+      borderColor: "black",
+      fill: false
     }]
   },
   options: {
