@@ -57,6 +57,8 @@ function save() {
 
   // alert('Saved');
 
+ 
+
   // Define the API URL
   const apiUrl = 'https://dirac-aa4f9-default-rtdb.firebaseio.com/Live.json';
 
@@ -132,6 +134,12 @@ function save() {
     .catch(error => {
       console.error('Error:', error);
     });
+}
+
+function deleteData() {
+  fetch('https://dirac-aa4f9-default-rtdb.firebaseio.com/Live.json',  {
+    method: 'DELETE'
+  })
 }
 
 // function populateTable1(data) {
